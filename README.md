@@ -4,12 +4,22 @@
 
 * Usage:
 
-Open "cmd" and enter:
+Create a BAT file and enter:
 
+> @echo off
 > "WebDev.WebServer.EXE" (/port:%port%) /path:"%path%" /vpath:"%webpath"
 
-example:
+Example1:
 
->"WebDev.WebServer.EXE" (port:8088) /path:"D:\test" /vpath:"/test
+> @echo off
+> "WebDev.WebServer.EXE" /path:"D:\test" /vpath:"/test
 
-* Then you can access 127.0.0.1(:8088)/test or localhost/test
+** Then open a new tab and enter "127.0.0.1/test" or "localhost/test"
+
+
+Example2:
+
+> @echo off
+> "WebDev.WebServer.EXE" port:8088 /path:"D:\test" /vpath:"/test
+
+** Then open a new tab and enter "127.0.0.1:8088/test"
